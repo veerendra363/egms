@@ -1,0 +1,61 @@
+get  http://localhost:3030/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiVmVlcmVuZHJhIiwiaWF0IjoxNjU0MDY4MjI4fQ.jAyz1KN26drZd41OkMku3rS7sZFtR__5e4yiiFeLU-0
+
+post  http://localhost:3030/egms/login/
+Content-Type: application/json
+
+{
+    "role": "Employee",
+    "user_name": "Shiva123",
+    "password": "Shiva@123"
+}
+
+get http://localhost:3030/egms/goals/employee/6/06/2022
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJTaGl2YTEyMyIsImlkIjo2LCJpYXQiOjE2NTQ1MTI5ODh9.uhWHSh2EQWy3O935foRgvFq_5sm1q98_VHXC-4iYnW8
+
+post http://localhost:3030/egms/goals/employee
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJTaGl2YTEyMyIsImlkIjo2LCJpYXQiOjE2NTQ1MTI5ODh9.uhWHSh2EQWy3O935foRgvFq_5sm1q98_VHXC-4iYnW8
+Content-Type: application/json
+
+{
+    "title":"Project X",
+    "status": "Inprogress",
+    "description": "",
+    "date": "2022-06-05"
+}
+
+put http://localhost:3030/egms/goals/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJTaGl2YTEyMyIsImlkIjo2LCJpYXQiOjE2NTQ1MTI5ODh9.uhWHSh2EQWy3O935foRgvFq_5sm1q98_VHXC-4iYnW8
+Content-Type: application/json
+
+{
+    "title":"Project X",
+    "status": "Completed",
+    "description": "complete both forntend and backend"
+}
+
+post  http://localhost:3030/egms/signup
+Content-Type: application/json
+
+{
+    "fname": "Ravi Kumar",
+    "lname": "Reddy",
+    "email": "ravikumar@gmail.com",
+    "phone_number": "9581184345",
+    "skills": "react, nodejs",
+    "role": "Employee",
+    "gdo": "GDO3",
+    "user_name": "Ravikumar1234",
+    "password": "Ravikumar@1234"
+}
+
+get http://localhost:3030/egms/employees/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJTaGl2YTEyMyIsImlkIjo2LCJpYXQiOjE2NTQ1MTI5ODh9.uhWHSh2EQWy3O935foRgvFq_5sm1q98_VHXC-4iYnW8
+
+DELETE http://localhost:3030/egms/goals/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJTaGl2YTEyMyIsImlkIjo2LCJpYXQiOjE2NTQ1MTI5ODh9.uhWHSh2EQWy3O935foRgvFq_5sm1q98_VHXC-4iYnW8
+
+
+get http://localhost:3030/egms/admins
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJTaGl2YTEyMyIsImlkIjo2LCJpYXQiOjE2NTQ1MTI5ODh9.uhWHSh2EQWy3O935foRgvFq_5sm1q98_VHXC-4iYnW8
+
