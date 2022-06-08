@@ -1,0 +1,13 @@
+.form-center{
+  padding: auto;
+}
+form{
+  width: fit-content;
+  margin: auto;
+  border: 1px solid gray;
+  padding: 1em;
+  border-radius: 1%;
+}
+label{
+  font-weight: bold;
+}
